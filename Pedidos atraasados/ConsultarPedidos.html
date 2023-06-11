@@ -45,16 +45,14 @@
 <main>
     <div class="div__input">
         <h1 class="title">Exames Atrasados</h1>
-        <input type="text" id="numeroPedido" class="input__pedido input__data" placeholder="Digite o ID do pedido" required>
+        <input type="text" id="numeroPedido" class="input__pedido input__data" placeholder="Digite o ID do pedido" required oninput="preencherDataSolicitacao()">
         <h3>Data de entrada</h3>
-        <input type="date" id="dataSolicitacao" placeholder="Data de solicitação" class="input__data">
+        <input type="text" id="dataSolicitacao" placeholder="Data de solicitação" class="input__data" readonly>
         <h3>Data atual</h3>
-        <input type="date" id="dataAtual" placeholder="Data atual" class="input__data">
-        <button onclick="verificarDiferenca() " class="button__data ">Verificar Status</button>
+        <input type="date" id="dataAtual" placeholder="Data atual" class="input__data" readonly>
+        <button onclick="verificarDiferenca()" class="button__data">Verificar Status</button>
         <p id="mensagem"></p>
     </div>
-    
-
 
 </main>
 
