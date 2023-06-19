@@ -156,4 +156,15 @@ footer{
     opacity: 1;
     border: 2px solid #FFFFFF; 
   }
+
+
+  @media (max-width: 768px){
+  .cabecalho__pesquisar{
+    display: none;
+  }
+
+  input{
+    width: 90%!important;
+  }
+}
   
